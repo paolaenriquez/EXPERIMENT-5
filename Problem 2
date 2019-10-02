@@ -1,0 +1,25 @@
+>> syms x y z
+>> f = (log(4*x + 5*y - 6*z)) + (2*x - 3*y + 4*z)^2;
+>> diff (f,y)
+ 
+ans =
+ 
+18*y - 12*x - 24*z + 5/(4*x + 5*y - 6*z)
+ 
+>> diff(diff(f,z),y)
+ 
+ans =
+ 
+30/(4*x + 5*y - 6*z)^2 - 24
+ 
+>> diff (f,z)
+ 
+ans =
+ 
+16*x - 24*y + 32*z - 6/(4*x + 5*y - 6*z)
+ 
+>> diff(diff(f,y),z)
+ 
+ans =
+ 
+30/(4*x + 5*y - 6*z)^2 - 24
