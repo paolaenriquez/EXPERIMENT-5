@@ -1,0 +1,28 @@
+>> syms x h
+>> f1 = (x^5)*(sin(3/(x + 5)))^2;
+>> limit (f1)
+ 
+ans =
+ 
+0
+ 
+>> f2 = ((sin(x + h)) - (sin(x))) / h;
+>> limit (f2,h,0)
+ 
+ans =
+ 
+cos(x)
+ 
+>> f3 = ((3*x + 7) / (3*x +5))^(3*x + 1); 
+>> limit (f3,inf)
+ 
+ans =
+ 
+exp(2)
+ 
+>> format long
+>> exp(2)
+
+ans =
+
+   7.389056098930650
